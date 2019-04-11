@@ -1,0 +1,42 @@
+[
+    {
+        "username": "John Murphy",
+        "comment": "Bought a 2015 Ford Focus from Connolly Motors, Dublin 3. Delighted with the car and with the service. Highly recommend.",
+        "id": 1
+    },
+    {
+        "username": "Mary Byrne",
+        "comment": "Looking for a five-door car. Budget of €15,000. Preferably low mileage. Kildare area.",
+        "id": 2
+    },
+    {
+        "username": "Jane Austen",
+        "comment": "Just had a service done on my Honda Civic by Murphy Motors, Glasnevin. Fantastic service and very reasonable cost.",
+        "id": 6
+    },
+    {
+        "username": "Jimmy",
+        "comment": "Bought a 2016 Ford Fiesta. Never again. My granny has more horse power.",
+        "id": 7
+    },
+    {
+        "username": "Sam",
+        "comment": "Looking for a reputable garage in the Westmeath area. Any suggestions?",
+        "id": 8
+    },
+    {
+        "username": "Frank",
+        "comment": "Thinking of buying an electric car. Budget of €40k. Best options?",
+        "id": 9
+    },
+    {
+        "username": "Billy",
+        "comment": "I'm looking for a Nissan Qashquai+2. Low mileage. Around €17k",
+        "id": 10
+    },
+    {
+        "username": "Larry Kinsella",
+        "comment": "Need advice! Which is better - a Nissan Qashqai or a Ford Galaxy?",
+        "id": 11
+    }
+]

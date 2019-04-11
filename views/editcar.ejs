@@ -1,0 +1,37 @@
+<% include ../partials/header %>
+    <section class="review-edit">
+       <div class="container">
+        <h1>Edit Your Car Details</h1>
+          <% res1.forEach(function(car) { %>
+           <form ref="uploadForm" action="/editcar/<%= car.Id %>" method="post" enctype="multipart/form-data"> 
+              <label for="Make">Make: </label>
+              <input name="Make" type="text" class="review-comment" value="<%= car.Make %>">
+              <br>
+              <label for="Model">Model: </label>
+              <input name="Model" type="text" class="review-comment" value="<%= car.Model %>">
+              <br>
+              <label for="Year">Year: </label>
+              <input name="Year" type="text" class="review-comment" value="<%= car.Year %>">
+              <br>
+              <label for="Mileage">KM: </label>
+              <input name="Mileage" type="text" class="review-comment" value="<%= car.Mileage %>">
+              <br>
+              <label for="Price">Price: </label>
+              <input name="Price" type="text" class="review-comment" value="<%= car.Price %>">
+              <br>
+              <label for="Image">Image: </label>
+              <input name="sampleFile" type="file" class="review-comment" value="<%= car.Image %>">
+              <br>
+              <label for="Info">More Info: </label>
+              <input name="Info" type="text" class="review-comment" value="<%= car.Info %>">
+              <br>
+              <div class="comment-btn mb-4"><button class="btn btn-primary">Update Details</button></div>
+              
+          </form> 
+         <% }); %> 
+        </div>
+    </section>
+
+
+
+<% include ../partials/footer %>

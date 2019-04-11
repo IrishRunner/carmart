@@ -1,0 +1,43 @@
+<% include ../partials/header %>
+    <section class="main">
+        <div class="container">
+            <div class="col-md-6">
+               <% res1.forEach(function(car) { %>
+                <form>
+                 <img src="../<%= car.Image %>" class="card-img-top mb-3 mt-3" alt="...">
+                 
+<!--
+                 <label for="carDetails">Car Details:</label>
+                 <input name="carDetails" type="text" class="review-comment" value="<%= car.Make %>">
+                 <br>
+                 <label for="Image">Image:</label>
+                 <input name="Image" type="text" class="review-comment" value="<%= car.Image %>">
+-->
+                 <% }); %>
+                 <br>
+                </form>
+                <% res1.forEach(function(offers) { %>
+                <form ref="uploadForm" action="/editoffer/<%= offers.Id %>" method="post" enctype="multipart/form-data">
+                 
+                  <label for="Name">Your Name: </label>
+                  <input name="Name" type="text" class="review-comment" required value="<%= offers.Name %>">
+                  <br>
+                  <label for="Email">Your Email: </label>
+                  <input name="Email" type="email" class="review-comment" required value="<%= offers.Email %>">
+                  <br>
+                  <label for="CarId">Car ID: </label>
+                  <input name="CarId" type="text" class="review-comment" required value="<%= offers.CarId %>">
+                  <br>
+                  <label for="Offer">Your Bid: </label>
+                  <input name="Offer" type="text" class="review-comment" required value="<%= offers.Offer %>">
+                  <br>
+                  <div class="comment-btn">
+                    <button class="btn btn-primary mb-5">Update Offer</button>
+                </div>
+                <% }); %> 
+                </form>
+            </div>
+        </div>
+    </section>
+
+<% include ../partials/footer %>

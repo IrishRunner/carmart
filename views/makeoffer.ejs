@@ -1,0 +1,57 @@
+<% include ../partials/header %>
+   
+<section class="main">
+   <div class="container">
+        <h1>Make an Offer</h1>
+        <div class="row">
+            <% res1.forEach(function(car) { %>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                  <img src="../<%= car.Image %>" class="card-img-top" alt="...">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title text-center"> <%= car.Make %> <%= car.Model%> </h5>
+                    <p class="card-text text-center carId">Car ID: <%= car.Id %></p>
+                    <p class="card-text text-center">Year: <%= car.Year %></p>
+                    <p class="card-text text-center">Asking Price: €<%= car.Price %></p>
+                  </div>
+                </div>
+
+            </div>
+            <% }); %>
+
+            <div class="col-md-6">
+                <form ref="uploadForm" action="/makeoffer" method="post" enctype="multipart/form-data">
+                 <% res1.forEach(function(car) { %>
+<!--                 <img src="../<%= car.Image %>" class="card-img-top" alt="...">-->
+                 
+                 <label for="Image">Car Details:</label>
+                 <input name="carDetails" type="text" class="review-comment" value=" <%= car.Make %> <%= car.Model %>">
+                 <br>
+                 <label for="carDetails">Image:</label>
+                 <input name="Image" type="text" class="review-comment" value="<%= car.Image %>">
+                 <% }); %>
+                 <br>
+                  <label for="Name">Your Name: </label>
+                  <input name="Name" type="text" class="review-comment" required>
+                  <br>
+                  <label for="Email">Your Email: </label>
+                  <input name="Email" type="email" class="review-comment" required>
+                  <br>
+                  <label for="CarId">Car ID: </label>
+                  <input name="CarId" type="text" class="review-comment" required>
+                  <br>
+                  <label for="Offer">Your Bid: </label>
+                  <input name="Offer" type="text" class="review-comment" required>
+                  <br>
+                  <div class="comment-btn">
+                    <button class="btn btn-primary mb-5">Make Offer</button>
+                </div> 
+                </form>
+               
+                
+            </div>
+        </div>
+    </div>
+</section>
+   
+<% include ../partials/footer %>

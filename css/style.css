@@ -1,0 +1,158 @@
+/*
+=============================
+Put in Reset or Normalise etc...
+=============================
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+/*
+=============================
+Header Section
+=============================
+*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(carsales.gif); 
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero-text-box {
+    position: absolute;
+/*    width: 1140px;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.car-track {
+    background-color: #fff;
+}
+
+.logo {
+    height: 100px;
+    position: relative;
+}
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #007bff;
+}
+
+
+/*
+   ================================
+    HOME PAGE
+   ================================
+*/
+
+.home-main {
+    min-height: 34vh;
+}
+
+
+/* ================================
+    REVIEWS PAGE
+   ================================ */
+
+.item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px 0;
+}
+
+.review-edit {
+    min-height: 35vh;
+}
+
+.review-comment {
+    width: 80%;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    margin-bottom: 3%;
+}
+/*  ==============================
+    CARS
+    ============================== */
+.main {
+    background-color: #e5e5e5;
+}
+
+
+.delete-edit {
+    width: 45%;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.carId {
+    color: red;
+}
+
+.jquery-text {
+    display: none;
+}
+
+/*  ==============================
+    COMPONENTS
+    ============================== */
+
+.center-align {
+    width: 70%;
+    margin-left: 12%;
+}
+
+.comment-btn {
+    text-align: center;
+}
+/*  ==============================
+    FOOTER
+    ============================== */
+footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(carsales.gif); 
+    background-size: cover;
+    background-position: center;
+    height: 5vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.footer {
+    text-align: right;
+    color: #fff;
+    padding-top: 5px;
+}

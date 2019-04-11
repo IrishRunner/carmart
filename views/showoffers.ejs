@@ -1,0 +1,23 @@
+<% include ../partials/header %>
+<section class="main">
+    <div class="container">
+       <h1>Highest Offers For Each Car</h1>
+       <div class="row">
+        <% res1.forEach(function(offer) { %>
+          <div class="card-body bg-light col-sm-6 mb-4">
+           <img src="<%= offer.Image %>" class="card-img-top" alt="...">
+            <h5 class="card-text text-center">Car ID: <%= offer.CarId %></h5>
+            
+            <p class="card-title text-center">Bidder: <%= offer.Name %> </p>
+            <p class="card-text text-center">Email: <%= offer.Email %></p>
+            <p class="card-text text-center">Offer: €<%= offer.Offer %></p>
+            <a href="#<%= offer.Id %>" class="btn btn-success center-align mt-3">Accept Offer</a>
+          </div>          
+        <% }); %>
+    </div>
+    </div>
+</section>
+
+
+
+<% include ../partials/footer %>

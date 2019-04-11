@@ -1,0 +1,43 @@
+<% include ../partials/header1 %>
+   
+<section class="main">
+  <div class="car-track">
+            <img src="logo-white.png" alt="CarMart logo" class="logo">
+    </div>
+   <div class="container">
+    
+
+        <h1>Cars For Sale</h1>
+        
+        <div class="row">
+            <% res1.forEach(function(car) { %>
+            <div class="col-sm-4 col-md-3">
+                <div class="card mb-3">
+                  <img src="<%= car.Image %>" class="card-img-top" alt="...">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title text-center"> <%= car.Make %> <%= car.Model%> </h5>
+                    <p class="card-text text-center">Year: <%= car.Year %></p>
+                    <p class="card-text text-center"><%= car.Mileage %> Km</p>
+                    <p class="card-text text-center">Asking Price: €<%= car.Price %></p>
+                    <a href="/editcar/<%= car.Id %>" class="btn btn-secondary delete-edit">Edit</a>
+                    <a href="/deletecar/<%= car.Id %>" class="btn btn-secondary delete-edit">Delete</a>
+                    <a href="/makeoffer/<%= car.Id %>" class="btn btn-success center-align mt-3 mb-3">Make an offer</a>
+                    <div class="jquery-btn">
+                      <button class="btn btn-secondary jquery-button center-align  mb-3">More info...</button>
+                  </div>
+                  <div class="jquery-text">
+                      <p class="card-text text-center"><%= car.Info %></p>
+                  </div>
+                  </div>
+                  
+                </div>
+            </div>
+            <% }); %>
+        </div>
+        <div class="comment-btn">
+            <a href="addcar" class="btn btn-primary mb-4 mt-3">Add a Car</a>
+      </div>
+    </div>
+</section>
+   
+<% include ../partials/footer %>

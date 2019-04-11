@@ -1,0 +1,35 @@
+<% include ../partials/header %>
+   
+<section class="main">
+    <div class="container">
+   
+<!--      <p> <%- JSON.stringify(reviews) %></p>-->
+        <h1 class="mb-5 comment-btn">Customer Comments and Reviews</h1>
+        <div class="comment-btn">
+            <a href="addreview" class="btn btn-primary mb-5">Add a Comment</a>
+        </div>
+        <div class="row">
+            <% reviews.forEach(function(review) { %>
+            <div class="col-md-4 mb-3">
+             
+              <div class="card-deck">
+               <div class="card border-dark">
+                  <div class="card-body bg-light">
+                    <h5 class="card-title"><%= review.username %></h5>
+<!--                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+                    <p class="card-text"> <%= review.comment %></p>
+                    <a href="/deletereview/ <%= review.id %>" class="btn btn-secondary">Delete Comment</a>
+                    <a href="/editreview/<%= review.id %>" class="btn btn-secondary">Edit Comment</a> 
+                  </div>
+                </div>
+            </div>
+            </div>
+            <% }); %>
+      </div>
+      <div class="comment-btn">
+            <a href="addreview" class="btn btn-primary mb-5">Add a Comment</a>
+      </div>
+    </div>
+</section>
+   
+<% include ../partials/footer %>

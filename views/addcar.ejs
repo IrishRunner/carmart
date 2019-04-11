@@ -1,0 +1,27 @@
+<% include ../partials/header %>
+   
+   <section class="review-edit">
+     <div class="container">
+     <h1>Advertise a Car</h1>
+      <form ref="uploadForm" action="/addcar" method="post" enctype="multipart/form-data">
+          <label for="Make">Make: </label>
+          <input name="Make" type="text" class="review-comment" required>
+          <br>
+          <label for="Model">Model: </label>
+          <input name="Model" type="text" class="review-comment" required>
+          <br>
+          <label for="Year">Year: </label>
+          <input name="Year" type="text" class="review-comment" required>
+          <br>
+          <label for="Price">Price: </label>
+          <input name="Price" type="text" class="review-comment" required>
+          <br>
+          <label for="Image">Image: </label>
+          <input name="sampleFile" type="file" class="review-comment" required>
+          <br>
+          <div class="comment-btn mb-5"><button class="btn btn-primary">Add Car</button></div>
+      </form> 
+      </div>
+   </section>
+   
+<% include ../partials/footer %>
