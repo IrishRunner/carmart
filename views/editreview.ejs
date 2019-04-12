@@ -1,7 +1,10 @@
 <% include ../partials/header %>
     <section class="review-edit">
        <div class="container">
-        <h1>Edit Your Review</h1>
+       <h1 class="h1">Edit Your Comment</h1>
+       <div class="row justify-content-center">
+        
+        <div class="form-container">
         <% res.forEach(function(indOne) { %>
             <form action="/editreview/<%= indOne.id %>" method="post">
               <label for="username">Username: </label>
@@ -10,10 +13,14 @@
               <label for="comment">Comment: </label>
               <input name="comment" type="text" value="<%= indOne.comment %>" class="review-comment">
               <br>
-              <button class="btn btn-primary">Update Review</button>
+              <div class="comment-btn mb-4"><button class="btn btn-secondary">Update Comment</button></div>
+              
             </form> 
         <% }); %>
         </div>
+        </div>
+        </div>
+        <div class="mt-5"></div>
     </section>
 
 

@@ -1,7 +1,10 @@
 <% include ../partials/header %>
     <section class="review-edit">
        <div class="container">
-        <h1>Edit Your Car Details</h1>
+       <h1 class="h1">Edit Your Car Details</h1>
+       <div class="row justify-content-center">
+        
+         <div class="form-container mb-5">
           <% res1.forEach(function(car) { %>
            <form ref="uploadForm" action="/editcar/<%= car.Id %>" method="post" enctype="multipart/form-data"> 
               <label for="Make">Make: </label>
@@ -25,10 +28,12 @@
               <label for="Info">More Info: </label>
               <input name="Info" type="text" class="review-comment" value="<%= car.Info %>">
               <br>
-              <div class="comment-btn mb-4"><button class="btn btn-primary">Update Details</button></div>
+              <div class="comment-btn mb-4"><button class="btn btn-secondary">Update Details</button></div>
               
           </form> 
          <% }); %> 
+         </div>
+         </div>
         </div>
     </section>
 

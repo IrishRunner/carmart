@@ -2,16 +2,21 @@
    
 <section class="main">
   <div class="car-track">
-            <img src="logo-white.png" alt="CarMart logo" class="logo">
+           <div class="logo">
+             <img src="logo-white.png" alt="CarMart logo">
+              <p class="logo-text"> &nbsp; &nbsp; Best Deals in Ireland! &nbsp; &nbsp;</p>
+               <img src="logo-white.png" alt="CarMart logo">
+           </div>
+            
     </div>
    <div class="container">
     
 
-        <h1>Cars For Sale</h1>
+        <h1 class="h1 mt-">Latest Cars</h1>
         
         <div class="row">
             <% res1.forEach(function(car) { %>
-            <div class="col-sm-4 col-md-3">
+            <div class="col-sm-4 col-md-3 mt-4">
                 <div class="card mb-3">
                   <img src="<%= car.Image %>" class="card-img-top" alt="...">
                   <div class="card-body bg-light">
@@ -35,7 +40,7 @@
             <% }); %>
         </div>
         <div class="comment-btn">
-            <a href="addcar" class="btn btn-primary mb-4 mt-3">Add a Car</a>
+            <a href="addcar" class="btn btn-secondary mb-5 mt-3">Add a Car</a>
       </div>
     </div>
 </section>

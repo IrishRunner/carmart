@@ -2,7 +2,9 @@
    
    <section class="review-edit">
      <div class="container">
-     <h1>Advertise a Car</h1>
+     <h1 class="h1">Advertise a Car</h1>
+     <div class="row justify-content-center">
+     <div class="form-container mb-5">
       <form ref="uploadForm" action="/addcar" method="post" enctype="multipart/form-data">
           <label for="Make">Make: </label>
           <input name="Make" type="text" class="review-comment" required>
@@ -13,14 +15,22 @@
           <label for="Year">Year: </label>
           <input name="Year" type="text" class="review-comment" required>
           <br>
+          <label for="Mileage">Mileage: </label>
+          <input name="Mileage" type="text" class="review-comment" required>
+          <br>
           <label for="Price">Price: </label>
           <input name="Price" type="text" class="review-comment" required>
+          <br>
+          <label for="Info">Info: </label>
+          <input name="Info" class="review-comment" type="text" required>
           <br>
           <label for="Image">Image: </label>
           <input name="sampleFile" type="file" class="review-comment" required>
           <br>
-          <div class="comment-btn mb-5"><button class="btn btn-primary">Add Car</button></div>
+          <div class="comment-btn mb-5"><button class="btn btn-secondary">Submit Car Details</button></div>
       </form> 
+      </div>
+      </div>
       </div>
    </section>
    

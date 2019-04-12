@@ -1,11 +1,11 @@
 <% include ../partials/header %>
     <section class="main">
         <div class="container">
-         <h1>All Offers</h1>
+         <h1 class="h1">All Offers</h1>
           <div class="row">
            
             <% res1.forEach(function(offer) { %>
-              <div class="card-body bg-light col-sm-4 col-md- mb-4">
+              <div class="card-body bg-light col-sm-4 mb-4 mt-4">
                <img src="<%= offer.Image %>" class="card-img-top" alt="...">
                 <h5 class="card-text text-center">Car ID: <%= offer.CarId %></h5>
 
