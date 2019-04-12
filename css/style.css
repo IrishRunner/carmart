@@ -98,7 +98,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #5cb85c;
+    border-bottom: 2px solid #fff;
 }
 
 
@@ -147,9 +147,6 @@ header {
     margin-top: 4%;
 }
 
-.carId {
-    color: red;
-}
 
 .jquery-text {
     display: none;
@@ -213,7 +210,7 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .form-container {
   border-radius: 5px;
-  background-color: #aaa;
+  background-color: #ccc;
   padding: 20px;
     width: 100%;
   max-width: 750px;

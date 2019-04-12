@@ -30,7 +30,7 @@
                  <br>
                  <label for="carDetails">Image:</label>
                  <input name="Image" type="text" class="review-comment" value="<%= car.Image %>">
-                 <% }); %>
+                 
                  <br>
                   <label for="Name">Your Name: </label>
                   <input name="Name" type="text" class="review-comment" required>
@@ -39,13 +39,14 @@
                   <input name="Email" type="email" class="review-comment" required>
                   <br>
                   <label for="CarId">Car ID: </label>
-                  <input name="CarId" type="text" class="review-comment" required>
+                  <input name="CarId" type="text" class="review-comment" value="<%= car.Id %>"required>
                   <br>
                   <label for="Offer">Your Bid: </label>
                   <input name="Offer" type="text" class="review-comment" required>
+                  <% }); %>
                   <br>
                   <div class="comment-btn">
-                    <button class="btn btn-secondary mb-5">Make Offer</button>
+                    <button class="btn btn-secondary mb-4 mt-3">Make Offer</button>
                 </div> 
                 </form>
                 </div>

@@ -22,7 +22,7 @@
                 </form>
                 <% res1.forEach(function(offers) { %>
                 </div>
-                <div class="form-container">
+                <div class="form-container mb-5">
                 <form ref="uploadForm" action="/editoffer/<%= offers.Id %>" method="post" enctype="multipart/form-data">
                  
                   <label for="Name">Your Name: </label>
@@ -38,7 +38,7 @@
                   <input name="Offer" type="text" class="review-comment" required value="<%= offers.Offer %>">
                   <br>
                   <div class="comment-btn">
-                    <button class="btn btn-secondary mb-5">Update Offer</button>
+                    <button class="btn btn-secondary mb-4 mt-3">Update Offer</button>
                 </div>
                 <% }); %> 
                 </form>
