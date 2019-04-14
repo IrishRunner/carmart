@@ -26,9 +26,9 @@
                     <p class="card-text text-center">Asking Price: €<%= car.Price %></p>
                     <a href="/editcar/<%= car.Id %>" class="btn btn-secondary delete-edit">Edit</a>
                     <a href="/deletecar/<%= car.Id %>" class="btn btn-secondary delete-edit">Delete</a>
-                    <a href="/makeoffer/<%= car.Id %>" class="btn btn-success center-align mt-3 mb-3">Make an offer</a>
+                    <a href="/makeoffer/<%= car.Id %>" class="btn btn-success offer-info mt-3 mb-3">Make an offer</a>
                     <div class="jquery-btn">
-                      <button class="btn btn-secondary jquery-button center-align  mb-3">More info...</button>
+                      <button class="btn btn-secondary jquery-button offer-info  mb-3">More info...</button>
                   </div>
                   <div class="jquery-text">
                       <p class="card-text text-center"><%= car.Info %></p>

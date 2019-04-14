@@ -142,7 +142,13 @@ header {
 
 
 .delete-edit {
-    width: 45%;
+    width: 49%;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.offer-info {
+    width: 100%;
     margin-bottom: 4%;
     margin-top: 4%;
 }
@@ -231,4 +237,21 @@ footer {
     text-align: right;
     color: #fff;
     padding-top: 5px;
+}
+
+
+/*  ==============================
+    MEDIA QUERIES
+    ============================== */
+@media only screen and (max-width: 990px){
+    .btn {
+        display: block;
+        width: 100%;
+    }
+    
+/*
+    .hero-text-box h1 {
+        font-size: 180%;
+    }
+*/
 }
